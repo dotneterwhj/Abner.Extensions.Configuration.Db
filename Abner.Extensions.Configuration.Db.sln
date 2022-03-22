@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{802CA40A-E589-488D-8191-7802B76231CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abner.Extensions.Configuration.Db", "Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj", "{AAFECADD-5555-43D7-84C1-A04059BADD16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.Sqlite", "Abner.Extensions.Configuration.Db.Sqlite\Abner.Extensions.Configuration.Db.Sqlite.csproj", "{64E2B867-9DAE-49DA-B761-9CFD61A97506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.Sqlite.Test", "Abner.Extensions.Configuration.Db.Sqlite.Test\Abner.Extensions.Configuration.Db.Sqlite.Test.csproj", "{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAFECADD-5555-43D7-84C1-A04059BADD16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFECADD-5555-43D7-84C1-A04059BADD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFECADD-5555-43D7-84C1-A04059BADD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFECADD-5555-43D7-84C1-A04059BADD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E2B867-9DAE-49DA-B761-9CFD61A97506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E2B867-9DAE-49DA-B761-9CFD61A97506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E2B867-9DAE-49DA-B761-9CFD61A97506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E2B867-9DAE-49DA-B761-9CFD61A97506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AAFECADD-5555-43D7-84C1-A04059BADD16} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
+		{64E2B867-9DAE-49DA-B761-9CFD61A97506} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
+		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7} = {802CA40A-E589-488D-8191-7802B76231CD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BBD3C37-F762-451F-AE72-62ED4CA3C440}
+	EndGlobalSection
+EndGlobal
