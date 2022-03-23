@@ -23,6 +23,10 @@ namespace Abner.Extensions.Configuration.Db
         /// </summary>
         public int ReloadDelay { get; set; } = 1000;
 
+        /// <summary>
+        /// 配置的更改是否持久化到数据库
+        /// </summary>
+        public bool SetPersistent { get; set; } = false;
 
         public Func<DbConnection> CreateDbConnection { get; set; }
 

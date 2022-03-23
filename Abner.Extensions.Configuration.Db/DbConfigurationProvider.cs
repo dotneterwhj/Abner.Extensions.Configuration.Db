@@ -68,25 +68,27 @@ namespace Abner.Extensions.Configuration.Db
                 }
             }
         }
-        
+
         public override void Set(string key, string value)
         {
-            string sqlstring = "";
-            List<DbParameter> parameters = new List<DbParameter>();
-
-            if (Data.ContainsKey(key))
+            if (_option.SetPersistent)
             {
-                // 更新配置
-                sqlstring = UpdateToDb(key, value, out parameters);
-            }
-            else
-            {
-                // 插入配置
-                sqlstring = InsertToDb(key, value, out parameters);
-            }
+                string sqlstring = "";
+                List<DbParameter> parameters = new List<DbParameter>();
 
-            SqlHelper.ExcuteNonQuery(_option.CreateDbConnection(), sqlstring, parameters);
+                if (Data.ContainsKey(key))
+                {
+                    // 更新配置
+                    sqlstring = UpdateToDb(key, value, out parameters);
+                }
+                else
+                {
+                    // 插入配置
+                    sqlstring = InsertToDb(key, value, out parameters);
+                }
 
+                SqlHelper.ExcuteNonQuery(_option.CreateDbConnection(), sqlstring, parameters);
+            }
             base.Set(key, value);
         }
 
