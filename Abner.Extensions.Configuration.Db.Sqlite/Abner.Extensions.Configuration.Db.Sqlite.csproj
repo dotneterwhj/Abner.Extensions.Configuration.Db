@@ -1,14 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageId>Abner.Extensions.Configuration.Db.Sqlite</PackageId>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>1.0.0</Version>
 		<Authors>Abner</Authors>
 		<Company>Abner</Company>
 		<PackageProjectUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</RepositoryUrl>
 		<PackageVersion>1.0.0</PackageVersion>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>Sqlite DbConfiguration Provider</Description>
 	</PropertyGroup>
 
@@ -19,6 +22,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\LICENSE" Pack="true" PackagePath="\"/>
 		<ProjectReference Include="..\Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj" />
 	</ItemGroup>
 </Project>

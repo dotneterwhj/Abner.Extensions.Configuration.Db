@@ -3,12 +3,15 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<PackageId>Abner.Extensions.Configuration.Db</PackageId>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>1.0.0</Version>
 		<Authors>Abner</Authors>
 		<Company>Abner</Company>
 		<PackageProjectUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</RepositoryUrl>
 		<PackageVersion>1.0.0</PackageVersion>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Description>DbConfiguration Provider</Description>
 	</PropertyGroup>
 
@@ -16,6 +19,11 @@
 		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
 		<PackageReference Include="System.Text.Json" Version="6.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\"/>
+		<None Include="..\LICENSE" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 </Project>
