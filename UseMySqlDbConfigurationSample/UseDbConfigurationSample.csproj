@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Abner.Extensions.Configuration.Db.MySql\Abner.Extensions.Configuration.Db.MySql.csproj" />
+    <ProjectReference Include="..\Abner.Extensions.Configuration.Db.Sqlite\Abner.Extensions.Configuration.Db.Sqlite.csproj" />
+    <ProjectReference Include="..\Abner.Extensions.Configuration.Db.SqlServer\Abner.Extensions.Configuration.Db.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>

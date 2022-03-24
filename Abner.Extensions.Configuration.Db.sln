@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configurat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.MySql.Test", "Abner.Extensions.Configuration.Db.MySql.Test\Abner.Extensions.Configuration.Db.MySql.Test.csproj", "{B296015A-B0DA-451E-A0E7-CAFD3521C33A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{B9553054-B538-496A-960A-7DD3DE7DB783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseDbConfigurationSample", "UseMySqlDbConfigurationSample\UseDbConfigurationSample.csproj", "{044851E9-881F-4168-9C57-6C5FEE58D684}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{B296015A-B0DA-451E-A0E7-CAFD3521C33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B296015A-B0DA-451E-A0E7-CAFD3521C33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B296015A-B0DA-451E-A0E7-CAFD3521C33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044851E9-881F-4168-9C57-6C5FEE58D684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044851E9-881F-4168-9C57-6C5FEE58D684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044851E9-881F-4168-9C57-6C5FEE58D684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044851E9-881F-4168-9C57-6C5FEE58D684}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,6 +75,8 @@ Global
 		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193} = {802CA40A-E589-488D-8191-7802B76231CD}
 		{9D6298FA-1B5E-476A-BBC2-6968CAC52949} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
 		{B296015A-B0DA-451E-A0E7-CAFD3521C33A} = {802CA40A-E589-488D-8191-7802B76231CD}
+		{B9553054-B538-496A-960A-7DD3DE7DB783} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
+		{044851E9-881F-4168-9C57-6C5FEE58D684} = {B9553054-B538-496A-960A-7DD3DE7DB783}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BBD3C37-F762-451F-AE72-62ED4CA3C440}

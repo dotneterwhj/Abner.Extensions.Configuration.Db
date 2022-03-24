@@ -33,16 +33,13 @@ namespace Abner.Extensions.Configuration.Db.MySql.Test
 
             var config = builder.Build();
 
-
+            config["test2"] = "value2";
+            Assert.Equal("value2", config["test2"]);
 
             Assert.Equal("Something street", config["person:residential.address:0:street.name"]);
             Assert.Equal("123456222", config["person:residential.address:1:zipcode"]);
             Assert.Equal("test", config["person:firstname"]);
             Assert.Equal("value1", config["test"]);
-
-            config["test2"] = "value2";
-            Assert.Equal("value2", config["test2"]);
-
             config["test"] = "value";
 
         }

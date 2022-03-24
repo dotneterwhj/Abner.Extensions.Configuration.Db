@@ -2,6 +2,14 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>Abner.Extensions.Configuration.Db.Sqlite</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Abner</Authors>
+		<Company>Abner</Company>
+		<PackageProjectUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</RepositoryUrl>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Description>Sqlite DbConfiguration Provider</Description>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -11,6 +19,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj" />
+		<ProjectReference Include="..\Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj" />
 	</ItemGroup>
 </Project>

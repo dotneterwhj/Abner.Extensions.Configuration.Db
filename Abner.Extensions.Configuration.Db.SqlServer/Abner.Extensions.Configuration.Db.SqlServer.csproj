@@ -1,15 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>Abner.Extensions.Configuration.Db.SqlServer</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Abner</Authors>
+		<Company>Abner</Company>
+		<PackageProjectUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</RepositoryUrl>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Description>SqlServer DbConfiguration Provider</Description>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj" />
+	</ItemGroup>
 
 </Project>

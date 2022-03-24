@@ -1,13 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<PackageId>Abner.Extensions.Configuration.Db</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Abner</Authors>
+		<Company>Abner</Company>
+		<PackageProjectUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db</RepositoryUrl>
+		<PackageVersion>1.0.0</PackageVersion>
+		<Description>DbConfiguration Provider</Description>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
-    <PackageReference Include="System.Text.Json" Version="6.0.2" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
+		<PackageReference Include="System.Text.Json" Version="6.0.2" />
+	</ItemGroup>
 
 </Project>
