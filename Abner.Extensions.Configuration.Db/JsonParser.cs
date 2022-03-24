@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 using System.Text.Json;
 
 namespace Abner.Extensions.Configuration.Db
@@ -43,7 +42,7 @@ namespace Abner.Extensions.Configuration.Db
                     }
                     else
                     {
-                        throw new FormatException(string.Format("json：{0}序列化失败", json));
+                        _data[key] = json;
                     }
                 }
             }

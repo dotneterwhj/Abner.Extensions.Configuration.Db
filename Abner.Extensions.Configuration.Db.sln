@@ -9,9 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{802CA40A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abner.Extensions.Configuration.Db", "Abner.Extensions.Configuration.Db\Abner.Extensions.Configuration.Db.csproj", "{AAFECADD-5555-43D7-84C1-A04059BADD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.Sqlite", "Abner.Extensions.Configuration.Db.Sqlite\Abner.Extensions.Configuration.Db.Sqlite.csproj", "{64E2B867-9DAE-49DA-B761-9CFD61A97506}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abner.Extensions.Configuration.Db.Sqlite", "Abner.Extensions.Configuration.Db.Sqlite\Abner.Extensions.Configuration.Db.Sqlite.csproj", "{64E2B867-9DAE-49DA-B761-9CFD61A97506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.Sqlite.Test", "Abner.Extensions.Configuration.Db.Sqlite.Test\Abner.Extensions.Configuration.Db.Sqlite.Test.csproj", "{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abner.Extensions.Configuration.Db.Sqlite.Test", "Abner.Extensions.Configuration.Db.Sqlite.Test\Abner.Extensions.Configuration.Db.Sqlite.Test.csproj", "{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.SqlServer", "Abner.Extensions.Configuration.Db.SqlServer\Abner.Extensions.Configuration.Db.SqlServer.csproj", "{4597C929-9EBD-426E-AF78-DC222022468E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abner.Extensions.Configuration.Db.SqlServer.Test", "Abner.Extensions.Configuration.Db.SqlServer.Test\Abner.Extensions.Configuration.Db.SqlServer.Test.csproj", "{DE49F519-DB3C-48B7-9BF5-62D7E2B70193}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4597C929-9EBD-426E-AF78-DC222022468E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4597C929-9EBD-426E-AF78-DC222022468E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4597C929-9EBD-426E-AF78-DC222022468E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4597C929-9EBD-426E-AF78-DC222022468E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +51,8 @@ Global
 		{AAFECADD-5555-43D7-84C1-A04059BADD16} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
 		{64E2B867-9DAE-49DA-B761-9CFD61A97506} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
 		{C9663760-E06C-400E-AD17-7CF4D5EA6EA7} = {802CA40A-E589-488D-8191-7802B76231CD}
+		{4597C929-9EBD-426E-AF78-DC222022468E} = {5FF0CB88-8D15-4C5A-93A8-C91FE53C0340}
+		{DE49F519-DB3C-48B7-9BF5-62D7E2B70193} = {802CA40A-E589-488D-8191-7802B76231CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5BBD3C37-F762-451F-AE72-62ED4CA3C440}

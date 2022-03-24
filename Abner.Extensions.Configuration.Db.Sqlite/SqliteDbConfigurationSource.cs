@@ -1,7 +1,4 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Abner.Extensions.Configuration.Db.Sqlite
 {
@@ -13,7 +10,8 @@ namespace Abner.Extensions.Configuration.Db.Sqlite
 
         public override IConfigurationProvider Build(IConfigurationBuilder builder)
         {
-            return new SqliteDbConfigurationProvider(base.Option);
+            base.EnsureDefaults(builder);
+            return new SqliteDbConfigurationProvider(this);
         }
     }
 }

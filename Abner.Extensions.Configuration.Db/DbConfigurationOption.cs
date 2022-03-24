@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Text;
-
-namespace Abner.Extensions.Configuration.Db
+﻿namespace Abner.Extensions.Configuration.Db
 {
     public class DbConfigurationOption
     {
@@ -22,19 +17,16 @@ namespace Abner.Extensions.Configuration.Db
         /// avoid triggering reload before a file is completely written. Default is 1000.
         /// </summary>
         public int ReloadDelay { get; set; } = 1000;
-
-        /// <summary>
-        /// 配置的更改是否持久化到数据库
-        /// </summary>
-        public bool SetPersistent { get; set; } = false;
-
-        public Func<DbConnection> CreateDbConnection { get; set; }
-
     }
 
     public class DbSetting
     {
         public static DbSetting Default { get; } = new DbSetting();
+
+        /// <summary>
+        /// 配置的更改是否持久化到数据库,目前只支持整体保存更改
+        /// </summary>
+        public bool SetPersistent { get; set; } = false;
 
         /// <summary>
         /// 连接字符串

@@ -1,10 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.IO;
-using System.Text;
 
 namespace Abner.Extensions.Configuration.Db.Sqlite
 {
@@ -42,7 +37,6 @@ namespace Abner.Extensions.Configuration.Db.Sqlite
                 options.DbSetting.TableName = tableName;
                 options.ReloadOnChange = reloadOnChange;
                 options.DbSetting.ConnectionString = connectionString;
-                options.CreateDbConnection = () => new SqliteConnection(connectionString);
             });
 
         /// <summary>

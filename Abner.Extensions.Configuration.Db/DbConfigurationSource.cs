@@ -1,13 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Data.Common;
-using System.Text;
 
 namespace Abner.Extensions.Configuration.Db
 {
     public abstract class DbConfigurationSource : IConfigurationSource
     {
-
         public DbConfigurationSource(DbConfigurationOption option)
         {
             Option = option;
@@ -15,6 +11,13 @@ namespace Abner.Extensions.Configuration.Db
 
         public DbConfigurationOption Option { get; }
 
+        public IDbProvider DbProvider { get; set; }
+
         public abstract IConfigurationProvider Build(IConfigurationBuilder builder);
+
+        public void EnsureDefaults(IConfigurationBuilder builder)
+        {
+            DbProvider = DbProvider ?? builder.GetDbProvider();
+        }
     }
 }

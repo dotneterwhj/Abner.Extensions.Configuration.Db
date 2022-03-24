@@ -2,43 +2,42 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
-using System.Diagnostics;
-using System.Text;
 
 namespace Abner.Extensions.Configuration.Db.Sqlite
 {
     internal class SqliteDbConfigurationProvider : DbConfigurationProvider
     {
-        public SqliteDbConfigurationProvider(DbConfigurationOption option) : base(option)
+        public SqliteDbConfigurationProvider(DbConfigurationSource source) : base(source)
         {
         }
 
+        protected override Func<DbConnection> CreateDbConnection { get => () => new SqliteConnection(option.DbSetting.ConnectionString); }
 
-        protected override string CreateTable()
+        protected override string CreateTableScript()
         {
-            return $@"CREATE TABLE IF NOT EXISTS [{_option.DbSetting.TableName}](
+            return $@"CREATE TABLE IF NOT EXISTS [{option.DbSetting.TableName}](
    Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-   {_option.DbSetting.KeyColumn} TEXT NOT NULL,
-   {_option.DbSetting.ValueColumn} TEXT NOT NULL
+   [{option.DbSetting.KeyColumn}] TEXT NOT NULL,
+   [{option.DbSetting.ValueColumn}] TEXT NOT NULL
 );";
         }
 
-        protected override string InsertToDb(string key, string value, out List<DbParameter> dbParameters)
+        protected override string InsertToDbScript(string key, string value, out List<DbParameter> dbParameters)
         {
             dbParameters = new List<DbParameter>();
-            dbParameters.Add(new SqliteParameter(_option.DbSetting.KeyColumn, key));
-            dbParameters.Add(new SqliteParameter(_option.DbSetting.ValueColumn, value));
+            dbParameters.Add(new SqliteParameter(option.DbSetting.KeyColumn, key));
+            dbParameters.Add(new SqliteParameter(option.DbSetting.ValueColumn, value));
 
-            return $@"INSERT INTO {_option.DbSetting.TableName} ({_option.DbSetting.KeyColumn},{_option.DbSetting.ValueColumn}) VALUES (@{_option.DbSetting.KeyColumn},@{_option.DbSetting.ValueColumn})";
+            return $@"INSERT INTO [{option.DbSetting.TableName}] ([{option.DbSetting.KeyColumn}],[{option.DbSetting.ValueColumn}]) VALUES (@{option.DbSetting.KeyColumn},@{option.DbSetting.ValueColumn})";
         }
 
-        protected override string UpdateToDb(string key, string value, out List<DbParameter> dbParameters)
+        protected override string UpdateToScript(string key, string value, out List<DbParameter> dbParameters)
         {
             dbParameters = new List<DbParameter>();
-            dbParameters.Add(new SqliteParameter(_option.DbSetting.KeyColumn, key));
-            dbParameters.Add(new SqliteParameter(_option.DbSetting.ValueColumn, value));
+            dbParameters.Add(new SqliteParameter(option.DbSetting.KeyColumn, key));
+            dbParameters.Add(new SqliteParameter(option.DbSetting.ValueColumn, value));
 
-            return $@"UPDATE {_option.DbSetting.TableName} SET {_option.DbSetting.ValueColumn} = @{_option.DbSetting.ValueColumn} WHERE {_option.DbSetting.KeyColumn} = @{_option.DbSetting.KeyColumn}";
+            return $@"UPDATE [{option.DbSetting.TableName}] SET [{option.DbSetting.ValueColumn}] = @{option.DbSetting.ValueColumn} WHERE [{option.DbSetting.KeyColumn}] = @{option.DbSetting.KeyColumn}";
         }
     }
 }
