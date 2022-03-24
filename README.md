@@ -56,7 +56,7 @@ builder.Configuration.AddMySql(options =>
 
 可以支持以下形式的value:
 
-![image-20220324150357879](C:\Users\wuhuajie\AppData\Roaming\Typora\typora-user-images\image-20220324150357879.png)
+![image-20220324150357879](https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db/blob/main/public/image/image-20220324150357879.png)
 
 
 
@@ -92,4 +92,4 @@ public IActionResult Get()
 
 在浏览器中访问时返回
 
-![image-20220324150429587](C:\Users\wuhuajie\AppData\Roaming\Typora\typora-user-images\image-20220324150429587.png)
+![image-20220324150429587](https://github.com/dotneterwhj/Abner.Extensions.Configuration.Db/blob/main/public/image/image-20220324150429587.png)
