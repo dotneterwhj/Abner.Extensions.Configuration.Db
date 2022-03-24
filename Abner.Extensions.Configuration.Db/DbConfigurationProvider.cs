@@ -23,6 +23,8 @@ namespace Abner.Extensions.Configuration.Db
 
             this.option = source.Option;
 
+            CreateDatabase();
+
             SqlHelper.ExcuteNonQuery(CreateDbConnection(), CreateTableScript(), null);
 
             if (option.ReloadOnChange)
@@ -38,6 +40,8 @@ namespace Abner.Extensions.Configuration.Db
                     });
             }
         }
+
+        protected virtual void CreateDatabase() { }
 
         public override void Load()
         {
